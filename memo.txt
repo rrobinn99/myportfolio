@@ -1,0 +1,59 @@
+on window powshell(admin)
+npm -g install @sanity/cli
+---------------------------------------
+
+first create-react-app name
+
+and inside the proj folder
+
+(bash) $ sanity login
+
+$sanity init (this sets up a new project
+We'll make sure you have an account with Sanity.io. Then we'll
+install an open-source JS content editor that connects to
+the real-time hosted API on Sanity.io.)
+$ sanity start (installing dependencies)
+
+...output...
+
+✔ Checking configuration files...
+\ Compiling...webpack built 
+dc97ebdb84a412e74f00 in 15885ms
+✔ Compiling...
+Content Studio successfully compiled! 
+Go to http://localhost:3333
+
+$yarn add @sanity/client
+
+------------------------------
+at manage.sanity.io
+at settings menu
+and API menu,
+add new origin "http://localhost:3000"
+
+----- git instructions ---------
+
+…or create a new repository on the command line
+echo "# myportfolio" >> README.md
+1. git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/rrobinn99/myportfolio.git
+git push -u origin main
+
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/rrobinn99/myportfolio.git
+git branch -M main
+git push -u origin main
+(push문제 해결됨,
+방법, 윈도우 자격증명에서
+git:...삭제하고 다시 설치함...
+
+인터넷 주소:  git:https://github.com
+사용자이름: rrobinn99
+암호: same as everything else
+지속성: 엔터프라이즈?
+참고: https://recoveryman.tistory.com/392
